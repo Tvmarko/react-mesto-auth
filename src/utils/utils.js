@@ -5,5 +5,5 @@ const apiSettings = {
       'Content-Type': 'application/json'
     }
   };
-  
-  export { apiSettings };
+
+export { apiSettings };

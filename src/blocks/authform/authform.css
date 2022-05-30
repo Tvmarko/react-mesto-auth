@@ -1,0 +1,10 @@
+.authform {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 282px);
+    width: 358px;
+    margin: 0 auto;
+    margin-top: 60px;
+    background-color: #000;
+    color: #FFFFFF;
+}

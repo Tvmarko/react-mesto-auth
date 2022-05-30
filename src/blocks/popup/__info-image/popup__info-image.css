@@ -1,0 +1,9 @@
+.popup__info-image {
+    max-width: 120px;
+    max-height: 120px;
+    object-fit: cover;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    margin-top: 22px;
+  }
