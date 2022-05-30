@@ -15,3 +15,7 @@
   .authform__input::placeholder {
     color: #CCC;
   }
+
+  .authform__input:focus {
+    outline: none;
+  } 

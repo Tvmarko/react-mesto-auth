@@ -10,22 +10,22 @@ import AddPlacePopup from "./AddPlacePopup.js";
 import ImagePopup from "./ImagePopup.js";
 import Login from "./Login.js";
 import Register from "./Register.js";
-import InfoTooltip from './InfoTooltip.js';
+import InfoTooltip from "./InfoTooltip.js";
 import ProtectedRoute from "./ProtectedRoute.js"; 
 import api from "../utils/api.js";
-import * as auth from '../utils/auth.js';
+import * as auth from "../utils/auth.js";
 import { CurrentUserContext } from "../contexts/CurrentUserContext.js";
 
 function App() {
   const [isEditProfilePopupOpen, setEditProfilePopupOpen] = useState(false);
   const [isAddPlacePopupOpen, setAddPlacePopupOpen] = useState(false);
   const [isEditAvatarPopupOpen, setEditAvatarPopupOpen] = useState(false);
-  const [isInfoTooltip, setInfoTooltip] = React.useState({isOpen: false, successful: false});
+  const [isInfoTooltip, setInfoTooltip] = useState({isOpen: false, successful: false});
   const [selectedCard, setSelectedCard] = useState({});
   const [currentUser, setCurrentUser] = useState({});
   const [cards, setCards] = useState([]);
   const [loggedIn, setLoggedIn] = useState(null);
-  const [email, setEmail] = React.useState("");
+  const [email, setEmail] = useState("");
   const history = useHistory();
   
   useEffect(() => {
@@ -55,8 +55,8 @@ function App() {
 
   function handleRegister(email, password){
     auth.register(email, password)
-      .then((data) => {
-        if(data){
+      .then((res) => {
+        if(res){
           handleInfoTooltip(true);
           history.push("/sign-in");
         } 
@@ -79,7 +79,6 @@ function App() {
       })
       .catch((err) => {
         console.log(err);
-        //handleInfoTooltip(false);
       })
   }
 
