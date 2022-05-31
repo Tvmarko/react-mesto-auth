@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/mesto-react/static/css/main.6155eec8.chunk.css",
-    "main.js": "/mesto-react/static/js/main.aec94083.chunk.js",
-    "main.js.map": "/mesto-react/static/js/main.aec94083.chunk.js.map",
-    "runtime~main.js": "/mesto-react/static/js/runtime~main.a26564be.js",
-    "runtime~main.js.map": "/mesto-react/static/js/runtime~main.a26564be.js.map",
-    "static/js/2.c8c4e285.chunk.js": "/mesto-react/static/js/2.c8c4e285.chunk.js",
-    "static/js/2.c8c4e285.chunk.js.map": "/mesto-react/static/js/2.c8c4e285.chunk.js.map",
-    "index.html": "/mesto-react/index.html",
-    "precache-manifest.9377dfdb8bd5ae2458d1a4af0e5356e0.js": "/mesto-react/precache-manifest.9377dfdb8bd5ae2458d1a4af0e5356e0.js",
-    "service-worker.js": "/mesto-react/service-worker.js",
-    "static/css/main.6155eec8.chunk.css.map": "/mesto-react/static/css/main.6155eec8.chunk.css.map",
-    "static/media/index.css": "/mesto-react/static/media/like-button.68fe0213.svg",
-    "static/media/delete-button.svg": "/mesto-react/static/media/delete-button.4831282e.svg",
-    "static/media/header-logo.svg": "/mesto-react/static/media/header-logo.400f7dde.svg"
+    "main.css": "/react-mesto-auth/static/css/main.2f5071aa.chunk.css",
+    "main.js": "/react-mesto-auth/static/js/main.aec94083.chunk.js",
+    "main.js.map": "/react-mesto-auth/static/js/main.aec94083.chunk.js.map",
+    "runtime~main.js": "/react-mesto-auth/static/js/runtime~main.f28c0edc.js",
+    "runtime~main.js.map": "/react-mesto-auth/static/js/runtime~main.f28c0edc.js.map",
+    "static/js/2.c8c4e285.chunk.js": "/react-mesto-auth/static/js/2.c8c4e285.chunk.js",
+    "static/js/2.c8c4e285.chunk.js.map": "/react-mesto-auth/static/js/2.c8c4e285.chunk.js.map",
+    "index.html": "/react-mesto-auth/index.html",
+    "precache-manifest.67dc30b5a501ce9aa162c87294e8ac36.js": "/react-mesto-auth/precache-manifest.67dc30b5a501ce9aa162c87294e8ac36.js",
+    "service-worker.js": "/react-mesto-auth/service-worker.js",
+    "static/css/main.2f5071aa.chunk.css.map": "/react-mesto-auth/static/css/main.2f5071aa.chunk.css.map",
+    "static/media/index.css": "/react-mesto-auth/static/media/like-button.68fe0213.svg",
+    "static/media/delete-button.svg": "/react-mesto-auth/static/media/delete-button.4831282e.svg",
+    "static/media/header-logo.svg": "/react-mesto-auth/static/media/header-logo.400f7dde.svg"
   }
 }
