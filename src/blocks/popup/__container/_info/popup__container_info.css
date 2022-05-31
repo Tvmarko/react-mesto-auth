@@ -4,3 +4,10 @@
     align-items: center;
     justify-content: center;
   }
+
+  @media screen and (max-width: 586px) {
+    .popup__container_info {
+        max-width: 282px;
+        margin: 130px auto;
+      }
+}

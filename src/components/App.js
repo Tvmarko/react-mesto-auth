@@ -89,6 +89,10 @@ function App() {
     history.push("/sign-in");
   }
 
+  function handleLoggedIn() {
+    setLoggedIn(true);
+  }
+  
   function handleUpdateUser(user) {
     api.editProfile(user)
       .then((userUpdatedData) => {
@@ -150,10 +154,6 @@ function App() {
       });
   }
 
-  function handleLoggedIn() {
-    setLoggedIn(true);
-  }
-  
   function handleEditProfileClick() {
     setEditProfilePopupOpen(true);
   }
@@ -213,8 +213,8 @@ function App() {
               onLogin={handleLogin}
             />
           </Route>
-          <Route exact path="/">
-            <Redirect to={!loggedIn ? "/sign-in" : "/"} />
+          <Route>
+            {loggedIn ? <Redirect to="/" />: <Redirect to="/sign-in" />}
           </Route> 
         </Switch>
                 

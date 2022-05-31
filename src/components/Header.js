@@ -7,19 +7,19 @@ function Header({email, onSignOut}) {
     <header className="header"> 
         <img className="header__logo" src={headerlogo} alt="логотип"/>
         <Route path="/sign-in">
-          <Link to='sign-up' className='header__auth-link'>Регистрация</Link>
+          <Link to="sign-up" className="header__auth-link">Регистрация</Link>
         </Route>
         <Route path="/sign-up">
-          <Link to='sign-in' className='header__auth-link'>Войти</Link>
+          <Link to="sign-in" className="header__auth-link">Войти</Link>
         </Route>
         <Route exact path="/">
           <div className="header__auth-container">
-              <p className='header__email'>{email}</p>
+              <p className="header__e-mail">{email}</p>
               <button
                 onClick={() => {
                   onSignOut();
                 }}
-                className='header__auth-link header__button'>Выйти</button>
+                className="header__auth-link header__button">Выйти</button>
             </div>
         </Route>
     </header>

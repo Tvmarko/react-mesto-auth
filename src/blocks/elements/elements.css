@@ -13,7 +13,6 @@
     .elements {
         max-width: 579px;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(auto-fit, minmax(361px, 1fr, 1fr));
         row-gap: 14px;
         column-gap: 12px;
       }
@@ -24,7 +23,6 @@
         padding-top: 36px;
         margin: 0 auto;
         max-width: 282px;
-        grid-auto-flow: column;
         grid-template-columns: 282px;
         grid-template-rows: repeat(6, 1fr);
         gap: 20px;

@@ -9,5 +9,7 @@
         max-width: 104px;
         height: 24px;
         padding-left: 27px;
+        order: 2;
+        margin-top: 40px;
       }
 }

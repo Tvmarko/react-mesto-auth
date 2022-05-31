@@ -16,3 +16,12 @@
     opacity: 0.8;
   }
 
+  @media screen and (max-width: 586px) {
+    .authform__button {
+        min-height: 50px;
+        margin-top: 173px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+

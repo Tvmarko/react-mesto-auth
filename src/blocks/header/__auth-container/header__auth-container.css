@@ -1,5 +1,13 @@
-.header__box{
+.header__auth-container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+  }
+
+  @media screen and (max-width:586px) {
+    .header__auth-container {
+      flex-direction: column;
+      padding-top: 12px;
+      margin: 0 auto;
+      order: 1;
+    }
   }
