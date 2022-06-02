@@ -29,15 +29,17 @@ function App() {
   const history = useHistory();
   
   useEffect(() => {
-    Promise.all([api.getProfileInfo(), api.getInitialCards()])
-    .then(([userData, cards]) => {
-      setCurrentUser(userData);
-      setCards(cards);
-    })
-    .catch((err) => {
-      console.log(err); 
-    });
-}, []);
+    if(loggedIn) {
+      Promise.all([api.getProfileInfo(), api.getInitialCards()])
+      .then(([userData, cards]) => {
+        setCurrentUser(userData);
+        setCards(cards);
+      })
+      .catch((err) => {
+        console.log(err); 
+      });
+    }
+  }, [loggedIn]);
 
   useEffect(() => {
     const token = localStorage.getItem('jwt');
@@ -50,6 +52,9 @@ function App() {
             history.push("/");
           }
         })
+        .catch((err) => {
+          console.log(err); 
+        });
     }
   }, [history]);
 
@@ -79,6 +84,7 @@ function App() {
       })
       .catch((err) => {
         console.log(err);
+        handleInfoTooltip(false);
       })
   }
 
@@ -246,6 +252,8 @@ function App() {
         <InfoTooltip 
           result={isInfoTooltip} 
           onClose={closeAllPopups} 
+          sucsessInfo="Вы успешно зарегистрировались!"
+          unsucsessInfo="Что-то пошло не так! Попробуйте еще раз."
         />
       </CurrentUserContext.Provider>
     </div>
